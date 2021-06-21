@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<main class="px-3" style="">
+    <h1 style="color:black; font-weight: bold;">Мёд из лесов Башкирии</h1>
+    <p class="lead" style="color:black; font-weight: 400;">Наименование «Башкирский мед» является защищённой торговой маркой. В 2005 году Башкирский научно-исследовательский центр по пчеловодству и апитерапии запатентовал словосочетание «Башкирский мед» для маркировки своей медовой продукции в отношении места происхождения товара.</p>
+    <p class="lead" >
+        <a href="{% url 'shop:order' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">Сделать заказ</a>
+    </p>
+    <p class="lead">
+        <a href="{% url 'shop:sorts' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">Ознокомиться с ассортиментом</a>
+    </p>
+</main>
+{% endblock %}

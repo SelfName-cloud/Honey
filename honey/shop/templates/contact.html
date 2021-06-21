@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="color:black;">Котакты</h1>
+<p style="color:black;font-weight: bold;">По всем вопросам обращаться по телефону <span><a href="https://web.whatsapp.com" style="color:black;font-weight: bold;"> 79991314573 </a></span>
+    <br> Писать на почту <span><a href="https://e.mail.ru" style="color:black;font-weight: bold;">ryabukhin_nikita@Mail.ru</a></span></p>
+<h1 style="color:black;font-weight: bold;">Социальные сети</h1>
+<p> <a href="https://vk.com/def__init__selfname" style="color:black;font-weight: bold;">Вкотакте </a><span style="color:black;font-weight: bold;">Рябухин Никита</span> <br>
+    <a href="https://t.me/ryabukhinnikita" style="color:black;font-weight: bold;"> Телеграм</a><span style="color:black;font-weight: bold;">@ryabukhinnikita</span>
+</p>
+<center><a href="{% url 'shop:honey' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black; width:200px; ">На главную </a></center>
+{% endblock %}

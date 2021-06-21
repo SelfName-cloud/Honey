@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3> Регестрация прошла успешно </h3><br>
+<p class="lead">
+      <a href="{% url 'shop:order' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">Сделать заказ</a>
+</p>
+<p class="lead">
+      <a href="{% url 'shop:honey' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">На главную</a>
+</p>
+{% endblock %}

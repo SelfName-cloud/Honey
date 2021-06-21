@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="background-color:black; margin:300px 320px 320px 300px; border-radius:10px;">
+<div style="margin-top:60px;">
+    <h2 style="color:white">Гречишный мед</h2>
+    <img src="static/image/gh.jpg" style="border: 3px solid black">
+    <p>
+        Гречишный мёд — монофлерный мёд, собранный во время цветения гречихи. Считается одним из самых полезных и ароматных сортов мёда.<br>
+        <span>Цена за килограмм: 600 руб.</span>
+    </p>
+    <p class="lead">
+        <a href="{% url 'shop:order' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">Сделать заказ</a>
+    </p>
+</div>
+<div style="margin-top:30px;">
+    <h2 style="color:white">Липовый мед</h2>
+    <img src="static/image/lh.jpg" style="border: 3px solid black">
+    <p>Липовый мёд — монофлерный мёд, собранный пчёлами из нектара цвета липы.<br>
+        <span>Цена за килограмм: 900 руб.</span>
+    </p>
+    <p class="lead">
+        <a href="{% url 'shop:order' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">Сделать заказ</a>
+    </p>
+</div>
+<div style="margin-top:30px;">
+    <h2 style="color:white">Цветочный мед</h2>
+    <img src="static/image/ch.jpg" style="border: 3px solid black">
+    <p>Цветочный мёд — полифлёрный мёд, продукт пчеловодства, где в составе соединяются нектар и пыльца нескольких цветущих растений.<br>
+        <span>Цена за килограмм: 580 руб.</span>
+    </p>
+    <p class="lead">
+        <a href="{% url 'shop:order' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">Сделать заказ</a>
+    </p>
+</div>
+</div>
+
+{% endblock %}

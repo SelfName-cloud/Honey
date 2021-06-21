@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p style="color:black; font-weight:bold; font-size:25px;">{{ message }}</p>
+<p style="color:black; font-weight:bold; font-size:25px;">Общая цена: {{ price }}</p>
+<p class="lead">
+        <a href="{% url 'shop:order' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">Сделать ещё заказ</a>
+    </p>
+<p class="lead">
+        <a href="{% url 'shop:honey' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="color:black;">На главную </a>
+    </p>
+
+{% endblock %}
